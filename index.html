@@ -7,17 +7,36 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="nav-logo" href="#">
+    <div class="nav-logo-icon">S</div>
+    START-UP <span>PC</span>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-btn discord" href="" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      Discord
+    </a>
+    <a class="nav-btn github" href="https://github.com/" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      GitHub
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-tag">// new machine setup guide</div>
-  <h1>Start-UP<br><span>PC</span></h1>
-  <p>Just bought your first PC or reset Windows? Find every essential app you need — browsers, drivers, launcher, dev tools &amp; more — all in one place.</p>
+  <h1>The best place to set up<br>your fresh Windows PC</h1>
+  <p>Just got a new PC or reset Windows? Find every essential app — browsers, drivers, games, dev tools &amp; more — all in one place.</p>
 </section>
 
+<!-- SEARCH -->
 <div class="search-wrap">
   <div class="search-box">
     <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -29,263 +48,363 @@
 
 <!-- BROWSERS -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">BROWSERS</span><div class="section-line"></div><span class="section-count">3 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">🌐</span>
+    <span class="section-label">Browsers</span>
+    <span class="section-count">3 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://brave.com/" target="_blank" data-name="brave browser" data-desc="privacy browser ad block">
-      <div class="card-icon"><img src="Images/Brave-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>B</span>'"></div>
-      <div class="card-body"><div class="card-name">Brave</div><div class="card-desc">Privacy-first browser with built-in ad blocking</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#1a1f3a,#2a1f3a)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Brave-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>B</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Brave</div>
+        <div class="card-desc">Privacy-first browser with built-in ad blocking</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://www.firefox.com/en-US/" target="_blank" data-name="firefox mozilla" data-desc="open source browser">
-      <div class="card-icon"><img src="Images/FireFox-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>F</span>'"></div>
-      <div class="card-body"><div class="card-name">Firefox</div><div class="card-desc">Open-source browser by Mozilla</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#2a1a10,#3a2510)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/FireFox-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>F</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Firefox</div>
+        <div class="card-desc">Open-source browser by Mozilla</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
-    <a class="card" href="https://zen-browser.app/download/" target="_blank" data-name="zen-browser" data-desc="open source browser">
-      <div class="card-icon"><img src="Images/Zen-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>F</span>'"></div>
-      <div class="card-body"><div class="card-name">ZenBrowser</div><div class="card-desc">We care about your experience, not your data.</div></div>
-      <span class="card-arrow">→</span>
+    <a class="card" href="https://zen-browser.app/download/" target="_blank" data-name="zen browser" data-desc="open source privacy browser">
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#101a2a,#152030)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Zen-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Z</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Zen Browser</div>
+        <div class="card-desc">We care about your experience, not your data</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
   </div>
 </div>
 
 <!-- DRIVERS -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">DRIVERS</span><div class="section-line"></div><span class="section-count">3 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">⚙️</span>
+    <span class="section-label">Drivers</span>
+    <span class="section-count">3 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://www.nvidia.com/en-eu/software/nvidia-app/" target="_blank" data-name="nvidia app gpu driver geforce" data-desc="nvidia drivers overlay geforce">
-      <div class="card-icon"><img src="Images/Nvidia-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>N</span>'"></div>
-      <div class="card-body"><div class="card-name">Nvidia App</div><div class="card-desc">Drivers &amp; overlay for NVIDIA GeForce GPUs</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a0a,#122512)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Nvidia-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>N</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Nvidia App</div>
+        <div class="card-desc">Drivers &amp; overlay for NVIDIA GeForce GPUs</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://www.amd.com/en/support/download/drivers.html" target="_blank" data-name="amd radeon software driver adrenalin" data-desc="amd gpu drivers radeon adrenalin">
-      <div class="card-icon"><img src="Images/AMD-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>A</span>'"></div>
-      <div class="card-body"><div class="card-name">AMD Radeon</div><div class="card-desc">Official Adrenalin driver suite for AMD GPUs</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#2a0a0a,#3a1010)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/AMD-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>A</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">AMD Radeon</div>
+        <div class="card-desc">Official Adrenalin driver suite for AMD GPUs</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
-    <a class="card" href="https://www.intel.com/content/www/us/en/support/detect.html" target="_blank" data-name="intel driver & support assistant" data-desc="intel driver & support assistant">
-      <div class="card-icon"><img src="Images/Intel-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>A</span>'"></div>
-      <div class="card-body"><div class="card-name">Intel® Driver</div><div class="card-desc">Official Intel driver suite for Intel CPU</div></div>
-      <span class="card-arrow">→</span>
+    <a class="card" href="https://www.intel.com/content/www/us/en/support/detect.html" target="_blank" data-name="intel driver support assistant cpu" data-desc="intel driver support assistant cpu">
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1525,#102030)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Intel-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>I</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Intel® Driver</div>
+        <div class="card-desc">Official Intel driver suite for Intel CPU</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
   </div>
 </div>
 
 <!-- LAUNCHER -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">LAUNCHER</span><div class="section-line"></div><span class="section-count">5 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">🚀</span>
+    <span class="section-label">Launchers</span>
+    <span class="section-count">5 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://store.steampowered.com/about/" target="_blank" data-name="steam valve gaming store" data-desc="pc games launcher store library">
-      <div class="card-icon"><img src="Images/Steam-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>S</span>'"></div>
-      <div class="card-body"><div class="card-name">Steam</div><div class="card-desc">Biggest PC gaming store &amp; launcher</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a2a,#162035)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Steam-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>S</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Steam</div>
+        <div class="card-desc">Biggest PC gaming store &amp; launcher</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://www.ea.com/ea-app" target="_blank" data-name="ea app electronic arts origin" data-desc="ea games launcher origin library">
-      <div class="card-icon"><img src="Images/EA-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>EA</span>'"></div>
-      <div class="card-body"><div class="card-name">EA App</div><div class="card-desc">Launcher for EA &amp; Origin game libraries</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d0a,#251510)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/EA-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>EA</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">EA App</div>
+        <div class="card-desc">Launcher for EA &amp; Origin game libraries</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://socialclub.rockstargames.com/rockstar-games-launcher" target="_blank" data-name="rockstar games launcher gta red dead" data-desc="gta v red dead redemption rockstar">
-      <div class="card-icon"><img src="Images/Rockstar-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>R</span>'"></div>
-      <div class="card-body"><div class="card-name">Rockstar Launcher</div><div class="card-desc">For GTA V, Red Dead &amp; more</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0a0a,#2a1010)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Rockstar-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>R</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Rockstar Launcher</div>
+        <div class="card-desc">For GTA V, Red Dead &amp; more</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://modrinth.com/app" target="_blank" data-name="modrinth minecraft mod manager launcher" data-desc="minecraft modpack mod manager">
-      <div class="card-icon"><img src="Images/Modrinth-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Mo</span>'"></div>
-      <div class="card-body"><div class="card-name">Modrinth</div><div class="card-desc">Minecraft mod manager &amp; launcher</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a10,#102018)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Modrinth-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Mo</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Modrinth</div>
+        <div class="card-desc">Minecraft mod manager &amp; launcher</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://feathermc.com/" target="_blank" data-name="feather launcher minecraft client" data-desc="minecraft performance fps client launcher">
-      <div class="card-icon"><img src="Images/Feather-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Fe</span>'"></div>
-      <div class="card-body"><div class="card-name">Feather</div><div class="card-desc">Minecraft performance &amp; optimization launcher</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#101a25,#152030)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Feather-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Fe</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Feather</div>
+        <div class="card-desc">Minecraft performance &amp; optimization launcher</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
   </div>
 </div>
 
 <!-- COMMUNICATION -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">COMMUNICATION</span><div class="section-line"></div><span class="section-count">2 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">💬</span>
+    <span class="section-label">Communication</span>
+    <span class="section-count">2 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://discord.com/download" target="_blank" data-name="discord chat voice video" data-desc="gaming voice chat community server">
-      <div class="card-icon"><img src="Images/Discord-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>D</span>'"></div>
-      <div class="card-body"><div class="card-name">Discord</div><div class="card-desc">Voice, video &amp; text chat for communities</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1030,#151840)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Discord-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>D</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Discord</div>
+        <div class="card-desc">Voice, video &amp; text chat for communities</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
     <a class="card" href="https://desktop.telegram.org/" target="_blank" data-name="telegram messaging chat" data-desc="fast secure messaging app desktop">
-      <div class="card-icon"><img src="Images/Telegram-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>TG</span>'"></div>
-      <div class="card-body"><div class="card-name">Telegram</div><div class="card-desc">Fast &amp; secure messaging app</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1525,#102035)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-icon-wrap"><img src="Images/Telegram-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>TG</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Telegram</div>
+        <div class="card-desc">Fast &amp; secure messaging app</div>
+        <div class="card-arrow">Visit →</div>
+      </div>
     </a>
   </div>
 </div>
 
 <!-- DEVELOPMENT -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">DEVELOPMENT</span><div class="section-line"></div><span class="section-count">8 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">💻</span>
+    <span class="section-label">Development</span>
+    <span class="section-count">8 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://code.visualstudio.com/" target="_blank" data-name="vscode visual studio code editor" data-desc="code editor microsoft lightweight ide">
-      <div class="card-icon"><img src="Images/VS-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VSC</span>'"></div>
-      <div class="card-body"><div class="card-name">VS Code</div><div class="card-desc">Lightweight &amp; powerful code editor by Microsoft</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a2a,#152035)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/VS-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VSC</span>'"></div></div>
+      <div class="card-body"><div class="card-name">VS Code</div><div class="card-desc">Lightweight &amp; powerful code editor by Microsoft</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://visualstudio.microsoft.com/" target="_blank" data-name="visual studio microsoft ide full" data-desc="c++ c# .net full ide windows">
-      <div class="card-icon"><img src="Images/VSStudio-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VS</span>'"></div>
-      <div class="card-body"><div class="card-name">Visual Studio</div><div class="card-desc">Full IDE for C++, C# and .NET projects</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#150d2a,#201535)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/VSStudio-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VS</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Visual Studio</div><div class="card-desc">Full IDE for C++, C# and .NET projects</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://git-scm.com/downloads" target="_blank" data-name="git version control source github" data-desc="git github source control repository">
-      <div class="card-icon"><img src="Images/Git-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>G</span>'"></div>
-      <div class="card-body"><div class="card-name">Git</div><div class="card-desc">Version control for any coding project</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d0a,#281510)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Git-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>G</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Git</div><div class="card-desc">Version control for any coding project</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://www.python.org/downloads/" target="_blank" data-name="python programming language runtime" data-desc="python scripting automation ai ml">
-      <div class="card-icon"><img src="Images/Python-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Py</span>'"></div>
-      <div class="card-body"><div class="card-name">Python</div><div class="card-desc">Popular general-purpose programming language</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a10,#152018)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Python-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Py</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Python</div><div class="card-desc">Popular general-purpose programming language</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://nodejs.org/" target="_blank" data-name="nodejs node javascript runtime npm" data-desc="javascript backend npm packages">
-      <div class="card-icon"><img src="Images/Node-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>N</span>'"></div>
-      <div class="card-body"><div class="card-name">Node.js</div><div class="card-desc">JavaScript runtime &amp; npm package manager</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a0a,#102010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Node-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>N</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Node.js</div><div class="card-desc">JavaScript runtime &amp; npm package manager</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://www.java.com/en/download/" target="_blank" data-name="java jre runtime environment" data-desc="java runtime jdk apps minecraft">
-      <div class="card-icon"><img src="Images/Java-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>J</span>'"></div>
-      <div class="card-body"><div class="card-name">Java (JRE)</div><div class="card-desc">Required runtime for Java-based apps</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a1000,#251800)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Java-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>J</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Java (JRE)</div><div class="card-desc">Required runtime for Java-based apps</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://www.jetbrains.com/pycharm/download/" target="_blank" data-name="pycharm jetbrains python ide editor" data-desc="python ide jetbrains professional">
-      <div class="card-icon"><img src="Images/PyCharm-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PC</span>'"></div>
-      <div class="card-body"><div class="card-name">PyCharm</div><div class="card-desc">Full-featured Python IDE by JetBrains</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a20,#102530)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/PyCharm-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PC</span>'"></div></div>
+      <div class="card-body"><div class="card-name">PyCharm</div><div class="card-desc">Full-featured Python IDE by JetBrains</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://mega.nz/file/l6FmEKzR#cRSIf_F9QgpYRbYX1lDSecz2tUF_5aQgN18Fr22Us68" target="_blank" data-name="dev c++ cpp ide compiler" data-desc="c++ ide beginner lightweight compiler">
-      <div class="card-icon"><img src="Images/DevCpp-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C++</span>'"></div>
-      <div class="card-body"><div class="card-name">Dev-C++</div><div class="card-desc">Lightweight C/C++ IDE for beginners</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0a1a,#251025)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/DevCpp-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C++</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Dev-C++</div><div class="card-desc">Lightweight C/C++ IDE for beginners</div><div class="card-arrow">Visit →</div></div>
     </a>
   </div>
 </div>
 
-<!-- DESIGN &amp; IT-->
+<!-- DESIGN & IT -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">DESIGN &amp; IT</span><div class="section-line"></div><span class="section-count">5 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">🎨</span>
+    <span class="section-label">Design &amp; IT</span>
+    <span class="section-count">5 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://mega.nz/file/oi0UhIpD#HopPPVr4mZi6Nx50bW8ro2qUVHDm8QbfcLdXcq0WS7k" target="_blank" data-name="adobe acrobat pdf file" data-desc="pdf editor acrobat adobe">
-      <div class="card-icon"><img src="Images/Adobe-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C++</span>'"></div>
-      <div class="card-body"><div class="card-name">Adobe Acrobat</div><div class="card-desc">Bring together files, ideas, &amp; an AI Assistant into a guided experience with PDF Spaces.</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0a0a,#2a1010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Adobe-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Ac</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Adobe Acrobat</div><div class="card-desc">AI-powered PDF editor &amp; document tool</div><div class="card-arrow">Download →</div></div>
     </a>
     <a class="card" href="https://mega.nz/file/cyEgAA7D#R2nu-ISFKtQ9UJNHRkGva2SAN6cU7_WCeflSMllmu-Y" target="_blank" data-name="adobe photoshop edit photo" data-desc="photo editing design adobe">
-      <div class="card-icon"><img src="Images/PS-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C++</span>'"></div>
-      <div class="card-body"><div class="card-name">Adobe Photoshop</div><div class="card-desc">Images editing &amp; design.</div></div>
-      <span class="card-arrow">→</span>
-    </a>    
-    <a class="card" href="https://mega.nz/file/wycx1bYQ#gUKTz0ajWolNnvAedr9ndX90NgWa_RwXg9-sMLuW40I" target="_blank" data-name="adobe illustrator draw &amp; graphic" data-desc="vector graphic illustration adobe">
-      <div class="card-icon"><img src="Images/AI-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C++</span>'"></div>
-      <div class="card-body"><div class="card-name">Adobe Illustrator</div><div class="card-desc">Vector graphic &amp; illustration.</div></div>
-      <span class="card-arrow">→</span>
-    </a>   
-    <a class="card" href="https://mega.nz/file/sn1DHY5I#OQiNk2K-7-kE54XtUxZu0My_kSmlx8XXLlVdn6qT9Ik" target="_blank" data-name="microsoft 365 office" data-desc="word excel powerpoint office microsoft">
-      <div class="card-icon"><img src="Images/Office-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VM</span>'"></div>
-      <div class="card-body"><div class="card-name">Microsoft 365 Office</div><div class="card-desc">Microsoft 365 helps you create, collaborate, &amp; work across documents, presentations, &amp; data.</div></div>
-      <span class="card-arrow">→</span>
-    </a>            
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a2a,#152035)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/PS-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PS</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Adobe Photoshop</div><div class="card-desc">Image editing &amp; design</div><div class="card-arrow">Download →</div></div>
+    </a>
+    <a class="card" href="https://mega.nz/file/wycx1bYQ#gUKTz0ajWolNnvAedr9ndX90NgWa_RwXg9-sMLuW40I" target="_blank" data-name="adobe illustrator draw graphic vector" data-desc="vector graphic illustration adobe">
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a1000,#251800)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/AI-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Ai</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Adobe Illustrator</div><div class="card-desc">Vector graphic &amp; illustration</div><div class="card-arrow">Download →</div></div>
+    </a>
+    <a class="card" href="https://mega.nz/file/sn1DHY5I#OQiNk2K-7-kE54XtUxZu0My_kSmlx8XXLlVdn6qT9Ik" target="_blank" data-name="microsoft 365 office word excel powerpoint" data-desc="word excel powerpoint office microsoft">
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a0d,#152015)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Office-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>M365</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Microsoft 365</div><div class="card-desc">Word, Excel, PowerPoint &amp; more</div><div class="card-arrow">Download →</div></div>
+    </a>
     <a class="card" href="https://mega.nz/file/hi9gUDBb#iALIuKUxdG6xTZR5kY0ZL5rbbjpUI5HkLVWYPpOODKA" target="_blank" data-name="vmware workstation virtual machine vm" data-desc="virtual machine windows linux vm hypervisor">
-      <div class="card-icon"><img src="Images/VMware-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VM</span>'"></div>
-      <div class="card-body"><div class="card-name">VMware Workstation</div><div class="card-desc">Run Windows/Linux virtual machines</div></div>
-      <span class="card-arrow">→</span>
-    </a>       
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/VMware-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VM</span>'"></div></div>
+      <div class="card-body"><div class="card-name">VMware Workstation</div><div class="card-desc">Run Windows/Linux virtual machines</div><div class="card-arrow">Download →</div></div>
+    </a>
   </div>
 </div>
 
 <!-- SYSTEM UTILITIES -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">SYSTEM UTILITIES</span><div class="section-line"></div><span class="section-count">8 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">🛠️</span>
+    <span class="section-label">System Utilities</span>
+    <span class="section-count">8 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://www.rarlab.com/download.htm" target="_blank" data-name="winrar archive zip rar 7z" data-desc="compress extract archive zip rar">
-      <div class="card-icon"><img src="Images/WinRAR-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WR</span>'"></div>
-      <div class="card-body"><div class="card-name">WinRAR</div><div class="card-desc">Extract &amp; create ZIP, RAR &amp; 7z archives</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d0a,#251510)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/WinRAR-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WR</span>'"></div></div>
+      <div class="card-body"><div class="card-name">WinRAR</div><div class="card-desc">Extract &amp; create ZIP, RAR &amp; 7z archives</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://rufus.ie/" target="_blank" data-name="rufus bootable usb drive iso" data-desc="create bootable usb windows linux iso">
-      <div class="card-icon"><img src="Images/Rufus-Icon.webp" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Ru</span>'"></div>
-      <div class="card-body"><div class="card-name">Rufus</div><div class="card-desc">Create bootable USB drives from ISO files</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Rufus-Icon.webp" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Ru</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Rufus</div><div class="card-desc">Create bootable USB drives from ISO files</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://mega.nz/file/QjFgkSbI#IIHOe-pPhleTSAaJbIw4a9NjigUbi4oK1y4HpfLtKxg" target="_blank" data-name="visual c++ runtime vcredist redistributable" data-desc="visual c++ all in one runtime libraries">
-      <div class="card-icon"><img src="Images/VCRedist-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VC</span>'"></div>
-      <div class="card-body"><div class="card-name">Visual C++ AIO</div><div class="card-desc">All Visual C++ runtimes in one installer</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#150d2a,#201535)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/VCRedist-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>VC</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Visual C++ AIO</div><div class="card-desc">All Visual C++ runtimes in one installer</div><div class="card-arrow">Download →</div></div>
     </a>
     <a class="card" href="https://www.asus.com/support/myasus-deeplink/" target="_blank" data-name="myasus asus laptop pc app" data-desc="asus laptop settings battery update driver">
-      <div class="card-icon"><img src="Images/MyASUS-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>MA</span>'"></div>
-      <div class="card-body"><div class="card-name">MyASUS</div><div class="card-desc">ASUS system settings, updates &amp; battery care</div></div>
-      <span class="card-arrow">→</span>
-    </a>   
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a0a,#102010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/MyASUS-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>MA</span>'"></div></div>
+      <div class="card-body"><div class="card-name">MyASUS</div><div class="card-desc">ASUS system settings, updates &amp; battery care</div><div class="card-arrow">Visit →</div></div>
+    </a>
     <a class="card" href="https://rog.asus.com/us/armoury-crate/" target="_blank" data-name="armoury crate asus rog aura rgb" data-desc="asus rgb lighting hardware fan control">
-      <div class="card-icon"><img src="Images/ArmouryCrate-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>AC</span>'"></div>
-      <div class="card-body"><div class="card-name">Armoury Crate</div><div class="card-desc">ASUS ROG hardware control &amp; RGB lighting</div></div>
-      <span class="card-arrow">→</span>
-    </a>   
-    <a class="card" href="https://www.msi.com/Landing/MSI-Center" target="_blank" data-name="msi center msi laptop pc app" data-desc="asus laptop settings battery update driver">
-      <div class="card-icon"><img src="Images/MSI-icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>MA</span>'"></div>
-      <div class="card-body"><div class="card-name">MSI Center</div><div class="card-desc">MSI Center keeps all the exclusive functions modular &amp; customizable.</div></div>
-      <span class="card-arrow">→</span>
-    </a>      
-    <a class="card" href="https://aka.ms/GetPCHealthCheckApp" target="_blank" data-name="pc health check app on windows" data-desc="asus rgb lighting hardware fan control">
-      <div class="card-icon"><img src="Images/Microsoft-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>AC</span>'"></div>
-      <div class="card-body"><div class="card-name">PC Health Check</div><div class="card-desc">Check if a device meets Windows 11 system requirements </div></div>
-      <span class="card-arrow">→</span>
-    </a> 
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0a0a,#2a1010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/ArmouryCrate-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>AC</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Armoury Crate</div><div class="card-desc">ASUS ROG hardware control &amp; RGB lighting</div><div class="card-arrow">Visit →</div></div>
+    </a>
+    <a class="card" href="https://www.msi.com/Landing/MSI-Center" target="_blank" data-name="msi center msi laptop pc" data-desc="msi laptop settings performance rgb control">
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0a0a,#251010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/MSI-icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>MSI</span>'"></div></div>
+      <div class="card-body"><div class="card-name">MSI Center</div><div class="card-desc">MSI hardware control &amp; customization</div><div class="card-arrow">Visit →</div></div>
+    </a>
+    <a class="card" href="https://aka.ms/GetPCHealthCheckApp" target="_blank" data-name="pc health check windows 11 requirements" data-desc="windows 11 requirements check health microsoft">
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Microsoft-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PC</span>'"></div></div>
+      <div class="card-body"><div class="card-name">PC Health Check</div><div class="card-desc">Check if your PC meets Windows 11 requirements</div><div class="card-arrow">Visit →</div></div>
+    </a>
     <a class="card" href="https://anydesk.com/download" target="_blank" data-name="anydesk remote desktop access" data-desc="remote desktop pc access control">
-      <div class="card-icon"><img src="Images/Anydesk-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>AD</span>'"></div>
-      <div class="card-body"><div class="card-name">AnyDesk</div><div class="card-desc">Fast &amp; lightweight remote desktop</div></div>
-      <span class="card-arrow">→</span>
-    </a>     
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d00,#251500)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Anydesk-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>AD</span>'"></div></div>
+      <div class="card-body"><div class="card-name">AnyDesk</div><div class="card-desc">Fast &amp; lightweight remote desktop</div><div class="card-arrow">Visit →</div></div>
+    </a>
   </div>
 </div>
 
 <!-- DISK MANAGEMENT -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">DISK MANAGEMENT</span><div class="section-line"></div><span class="section-count">5 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">💾</span>
+    <span class="section-label">Disk Management</span>
+    <span class="section-count">5 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://crystalmark.info/en/download/" target="_blank" data-name="crystaldiskinfo disk health drive" data-desc="hdd ssd health temperature smart monitor">
-      <div class="card-icon"><img src="Images/CrystalDiskInfo.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C</span>'"></div>
-      <div class="card-body"><div class="card-name">CrystalDiskInfo</div><div class="card-desc">Monitor drive health &amp; temperature</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a25,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/CrystalDiskInfo.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>C</span>'"></div></div>
+      <div class="card-body"><div class="card-name">CrystalDiskInfo</div><div class="card-desc">Monitor drive health &amp; temperature</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://www.poweriso.com/download.php" target="_blank" data-name="poweriso iso disc image virtual drive" data-desc="mount burn iso disc image virtual">
-      <div class="card-icon"><img src="Images/PowerISO-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PI</span>'"></div>
-      <div class="card-body"><div class="card-name">PowerISO</div><div class="card-desc">Mount &amp; burn ISO disc image files</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d00,#251500)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/PowerISO-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PI</span>'"></div></div>
+      <div class="card-body"><div class="card-name">PowerISO</div><div class="card-desc">Mount &amp; burn ISO disc image files</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://windirstat.net/" target="_blank" data-name="windirstat disk space usage storage" data-desc="disk usage visualizer storage analyzer">
-      <div class="card-icon"><img src="Images/WinDirStat-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WD</span>'"></div>
-      <div class="card-body"><div class="card-name">WinDirStat</div><div class="card-desc">Visual disk space usage analyzer</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1a10,#152018)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/WinDirStat-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WD</span>'"></div></div>
+      <div class="card-body"><div class="card-name">WinDirStat</div><div class="card-desc">Visual disk space usage analyzer</div><div class="card-arrow">Visit →</div></div>
     </a>
-    <a class="card" href="https://www.partitionwizard.com/" target="_blank" data-name="all-in-one disk partition manager" data-desc="disk usage visualizer storage analyzer">
-      <div class="card-icon"><img src="Images/Minitool-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WD</span>'"></div>
-      <div class="card-body"><div class="card-name">MiniToolPartitionWizard</div><div class="card-desc">It helps create/resize/format partition flexibly</div></div>
-      <span class="card-arrow">→</span>
+    <a class="card" href="https://www.partitionwizard.com/" target="_blank" data-name="minitool partition wizard disk manager" data-desc="disk partition create resize format">
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Minitool-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>MT</span>'"></div></div>
+      <div class="card-body"><div class="card-name">MiniTool Partition</div><div class="card-desc">Create, resize &amp; format partitions easily</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://www.wisecleaner.com/wise-program-uninstaller.html" target="_blank" data-name="wise program uninstaller wpu remove apps" data-desc="uninstall programs remove apps leftovers clean">
-      <div class="card-icon"><img src="Images/WPU-Icon.avif" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WU</span>'"></div>
-      <div class="card-body"><div class="card-name">Wise Uninstaller</div><div class="card-desc">Cleanly remove programs &amp; leftover files</div></div>
-      <span class="card-arrow">→</span>
-    </a>     
-    </div>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a0a,#102010)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/WPU-Icon.avif" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WU</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Wise Uninstaller</div><div class="card-desc">Cleanly remove programs &amp; leftover files</div><div class="card-arrow">Visit →</div></div>
+    </a>
+  </div>
 </div>
+
 <!-- POWERSHELL TOOLS -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">POWERSHELL TOOLS</span><div class="section-line"></div><span class="section-count">2 commands</span></div>
+  <div class="section-header">
+    <span class="section-icon">⚡</span>
+    <span class="section-label">PowerShell Tools</span>
+    <span class="section-count">2 commands</span>
+  </div>
   <div class="cmd-grid">
-
-    <!-- Chris Titus WinUtil -->
     <div class="cmd-card" data-name="chris titus winutil windows utility" data-desc="windows tweaks debloat apps install powershell">
       <div class="cmd-top">
-      <div class="cmd-icon"><img src="Images/WinUtil-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PI</span>'"></div>
+        <div class="cmd-icon"><img src="Images/WinUtil-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PS</span>'"></div>
         <div class="cmd-info">
           <div class="cmd-name">Chris Titus WinUtil</div>
           <div class="cmd-desc">All-in-one Windows setup tool — install apps, apply tweaks, remove bloatware &amp; fix common issues. Run in PowerShell as Administrator.</div>
@@ -297,15 +416,12 @@
         <button class="cmd-copy" data-cmd="irm christitus.com/win | iex">Copy</button>
       </div>
     </div>
-
-    <!-- Wise Program Uninstaller (moved here as it fits utilities, plus WPU is separate below) -->
-    <!-- CTT Winutil how to open note -->
-    <div class="cmd-card" data-name="powershell admin terminal administrator" data-desc="how to open powershell admin administrator terminal">
+    <div class="cmd-card" data-name="windows activated cmd keys office activation" data-desc="windows activation office keys powershell">
       <div class="cmd-top">
-      <div class="card-icon"><img src="Images/Window-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PI</span>'"></div>
+        <div class="cmd-icon"><img src="Images/Window-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>Win</span>'"></div>
         <div class="cmd-info">
           <div class="cmd-name">Windows Activated CMD</div>
-          <div class="cmd-desc">Windows setup tool — Activated Windows Keys, Activated Office. Run in PowerShell as Administrator.</div>
+          <div class="cmd-desc">Activate Windows Keys &amp; Office. Run in PowerShell as Administrator.</div>
           <span class="cmd-tag">open-source</span>
         </div>
       </div>
@@ -314,57 +430,69 @@
         <button class="cmd-copy" data-cmd="irm https://get.activated.win | iex">Copy</button>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- GAME-SECTION -->
+<!-- GAME SECTION -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">GAME-SECTION</span><div class="section-line"></div><span class="section-count">1 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">🎮</span>
+    <span class="section-label">Game Section</span>
+    <span class="section-count">1 app</span>
+  </div>
   <div class="grid">
     <a class="card" href="#"
       onclick="openChoice(event,
         'Google Drive', 'https://drive.google.com/file/d/15tY4csJiVV5n-1mAimkU-RJ8OqW-K5Un/view?usp=sharing', 'Download GTA V from Google Drive',
-        'VTB GTA V', 'https://api.repscripts.com/uploads/VTB_Download_GTA_V.exe', 'Download VTB GTA V installer directly')"
+        'Direct Download', 'https://api.repscripts.com/uploads/VTB_Download_GTA_V.exe', 'Download VTB GTA V installer directly')"
       data-name="gta v grand theft auto game" data-desc="gta v grand theft auto rockstar open world">
-      <div class="card-icon"><img src="Images/GTAV-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>GTA</span>'"></div>
-      <div class="card-body"><div class="card-name">GTA V</div><div class="card-desc">Open-world action game by Rockstar Games</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner">
+        <div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0808,#2d1010)"></div>
+        <div class="card-banner-overlay"></div>
+        <div class="card-badge">FREE</div>
+        <div class="card-icon-wrap"><img src="Images/GTAV-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>GTA</span>'"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">GTA V</div>
+        <div class="card-desc">Open-world action game by Rockstar Games</div>
+        <div class="card-arrow">Download →</div>
+      </div>
     </a>
   </div>
 </div>
 
 <!-- CUSTOMIZATION -->
 <div class="section" data-section>
-  <div class="section-header"><span class="section-label">CUSTOMIZATION</span><div class="section-line"></div><span class="section-count">5 apps</span></div>
+  <div class="section-header">
+    <span class="section-icon">✨</span>
+    <span class="section-label">Customization</span>
+    <span class="section-count">5 apps</span>
+  </div>
   <div class="grid">
     <a class="card" href="https://www.rainmeter.net/" target="_blank" data-name="rainmeter desktop skins widgets" data-desc="desktop customization skins widgets overlay">
-      <div class="card-icon"><img src="Images/Rainmeter-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>RM</span>'"></div>
-      <div class="card-body"><div class="card-name">Rainmeter</div><div class="card-desc">Customize your desktop with skins &amp; widgets</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Rainmeter-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>RM</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Rainmeter</div><div class="card-desc">Customize your desktop with skins &amp; widgets</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://windhawk.net/" target="_blank" data-name="windhawk windows mods taskbar explorer" data-desc="windows taskbar explorer customize mods">
-      <div class="card-icon"><img src="Images/Windhawk-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WH</span>'"></div>
-      <div class="card-body"><div class="card-name">Windhawk</div><div class="card-desc">Mod Windows taskbar, Explorer &amp; more</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a20,#102530)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Windhawk-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WH</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Windhawk</div><div class="card-desc">Mod Windows taskbar, Explorer &amp; more</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://apps.microsoft.com/detail/XP89DCGQ3K6VLD?hl=en-US&gl=US&ocid=pdpshare" target="_blank" data-name="powertoys microsoft utilities tools" data-desc="windows power user tools fancyzones spotlight">
-      <div class="card-icon"><img src="Images/PowerToys-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PT</span>'"></div>
-      <div class="card-body"><div class="card-name">PowerToys</div><div class="card-desc">Microsoft's power-user Windows utilities</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0d1525,#152030)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/PowerToys-Icon.png" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>PT</span>'"></div></div>
+      <div class="card-body"><div class="card-name">PowerToys</div><div class="card-desc">Microsoft's power-user Windows utilities</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://apps.microsoft.com/detail/9P8LTPGCBZXD?hl=en-us&gl=US&ocid=pdpshare" target="_blank" data-name="wintoy wintoys windows tweaks optimizer" data-desc="windows settings tweak optimize debloat">
-      <div class="card-icon"><img src="Images/WinToy-Icon.avif" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WT</span>'"></div>
-      <div class="card-body"><div class="card-name">WinToy</div><div class="card-desc">Simple Windows tweaker &amp; optimizer</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#1a0d00,#251500)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/WinToy-Icon.avif" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>WT</span>'"></div></div>
+      <div class="card-body"><div class="card-name">WinToy</div><div class="card-desc">Simple Windows tweaker &amp; optimizer</div><div class="card-arrow">Visit →</div></div>
     </a>
     <a class="card" href="https://hone.gg/" target="_blank" data-name="hone gaming optimizer latency fps" data-desc="gaming network optimization fps boost latency">
-      <div class="card-icon"><img src="Images/Hone-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>H</span>'"></div>
-      <div class="card-body"><div class="card-name">Hone</div><div class="card-desc">Reduce game latency &amp; boost FPS</div></div>
-      <span class="card-arrow">→</span>
+      <div class="card-banner"><div class="card-banner-bg" style="background:linear-gradient(135deg,#0a1a10,#102018)"></div><div class="card-banner-overlay"></div><div class="card-icon-wrap"><img src="Images/Hone-Icon.svg" alt="" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=fallback>H</span>'"></div></div>
+      <div class="card-body"><div class="card-name">Hone</div><div class="card-desc">Reduce game latency &amp; boost FPS</div><div class="card-arrow">Visit →</div></div>
     </a>
   </div>
 </div>
+
+<footer>made for fresh installs &amp; new builds — startup-pc.netlify.app</footer>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="choiceModal">
@@ -384,8 +512,6 @@
     <button class="modal-cancel" id="modalCancel">✕ Cancel</button>
   </div>
 </div>
-
-<footer>made for fresh installs &amp; new builds</footer>
 
 <script src="script.js"></script>
 </body>
