@@ -38,18 +38,33 @@ document.querySelectorAll(".cmd-copy").forEach((btn) => {
     });
   });
 });
-// Two-link modal
-function openChoice(e, name1, url1, desc1, name2, url2, desc2) {
+//link modal
+function openChoice(
+  e,
+  name1,
+  url1,
+  desc1,
+  name2,
+  url2,
+  desc2,
+  name3,
+  url3,
+  desc3,
+) {
   e.preventDefault();
   const overlay = document.getElementById("choiceModal");
   const opt1 = document.getElementById("modalOpt1");
   const opt2 = document.getElementById("modalOpt2");
+  const opt3 = document.getElementById("modalOpt3");
   opt1.href = url1;
   opt1.querySelector(".modal-btn-name").textContent = name1;
   opt1.querySelector(".modal-btn-desc").textContent = desc1;
   opt2.href = url2;
   opt2.querySelector(".modal-btn-name").textContent = name2;
   opt2.querySelector(".modal-btn-desc").textContent = desc2;
+  opt3.href = url3;
+  opt3.querySelector(".modal-btn-name").textContent = name3;
+  opt3.querySelector(".modal-btn-desc").textContent = desc3;
   overlay.classList.add("open");
 }
 
