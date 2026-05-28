@@ -25,20 +25,22 @@ input.addEventListener("input", () => {
   noResult.style.display = q && visible === 0 ? "block" : "none";
 });
 
+// Fix: save/restore innerHTML so the clipboard icon survives the reset
 document.querySelectorAll(".cmd-copy").forEach((btn) => {
   btn.addEventListener("click", () => {
     navigator.clipboard.writeText(btn.dataset.cmd).then(() => {
-      const orig = btn.textContent;
-      btn.textContent = "Copied!";
+      const origHTML = btn.innerHTML;
+      btn.innerHTML = "Copied!";
       btn.classList.add("copied");
       setTimeout(() => {
-        btn.textContent = orig;
+        btn.innerHTML = origHTML;
         btn.classList.remove("copied");
       }, 2000);
     });
   });
 });
-//link modal
+
+// Three-link modal (opt3 is optional — hidden when name3 is blank)
 function openChoice(
   e,
   name1,
@@ -56,15 +58,25 @@ function openChoice(
   const opt1 = document.getElementById("modalOpt1");
   const opt2 = document.getElementById("modalOpt2");
   const opt3 = document.getElementById("modalOpt3");
+
   opt1.href = url1;
   opt1.querySelector(".modal-btn-name").textContent = name1;
   opt1.querySelector(".modal-btn-desc").textContent = desc1;
+
   opt2.href = url2;
   opt2.querySelector(".modal-btn-name").textContent = name2;
   opt2.querySelector(".modal-btn-desc").textContent = desc2;
-  opt3.href = url3;
-  opt3.querySelector(".modal-btn-name").textContent = name3;
-  opt3.querySelector(".modal-btn-desc").textContent = desc3;
+
+  // opt3 is optional — hide it if no name/url provided
+  if (name3 && url3) {
+    opt3.href = url3;
+    opt3.querySelector(".modal-btn-name").textContent = name3;
+    opt3.querySelector(".modal-btn-desc").textContent = desc3;
+    opt3.style.display = "";
+  } else {
+    opt3.style.display = "none";
+  }
+
   overlay.classList.add("open");
 }
 
