@@ -25,7 +25,6 @@ input.addEventListener("input", () => {
   noResult.style.display = q && visible === 0 ? "block" : "none";
 });
 
-// Fix: save/restore innerHTML so the clipboard icon survives the reset
 document.querySelectorAll(".cmd-copy").forEach((btn) => {
   btn.addEventListener("click", () => {
     navigator.clipboard.writeText(btn.dataset.cmd).then(() => {
@@ -40,7 +39,6 @@ document.querySelectorAll(".cmd-copy").forEach((btn) => {
   });
 });
 
-// Three-link modal (opt3 is optional — hidden when name3 is blank)
 function openChoice(
   e,
   name1,
@@ -67,7 +65,6 @@ function openChoice(
   opt2.querySelector(".modal-btn-name").textContent = name2;
   opt2.querySelector(".modal-btn-desc").textContent = desc2;
 
-  // opt3 is optional — hide it if no name/url provided
   if (name3 && url3) {
     opt3.href = url3;
     opt3.querySelector(".modal-btn-name").textContent = name3;

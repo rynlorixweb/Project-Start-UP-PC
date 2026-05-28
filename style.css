@@ -28,17 +28,14 @@ body {
   font-family: var(--sans);
   color: var(--text);
   background-color: var(--bg);
-  /* Place bg.jpg at root alongside index.html, or update the path below */
   background-image: url('bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center 15%;
   min-height: 100vh;
-  /* Override Bootstrap body font */
   font-family: var(--sans) !important;
 }
 
-/* ── NAVBAR ─────────────────────────────────────── */
 .navbar {
   position: sticky !important;
   top: 0;
@@ -92,7 +89,6 @@ body {
 }
 .nav-link:hover { color: var(--text) !important; background: rgba(77, 124, 255, 0.1); }
 
-/* ── HERO ───────────────────────────────────────── */
 .hero {
   position: relative;
   text-align: center;
@@ -105,7 +101,6 @@ body {
   background: var(--bg2);
 }
 
-/* Banner image fills the full hero as a background */
 .hero-banner-wrap {
   position: absolute;
   inset: 0;
@@ -124,7 +119,7 @@ body {
   opacity: 0.65;
   z-index: 0;
 }
-/* Gradient overlay — fades image into page colour at the bottom */
+
 .hero-banner-wrap::after {
   content: '';
   position: absolute;
@@ -138,7 +133,6 @@ body {
   pointer-events: none;
 }
 
-/* Hero text sits above everything */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -163,7 +157,6 @@ body {
   text-shadow: 0 1px 8px rgba(0,0,0,0.8);
 }
 
-/* ── SEARCH ─────────────────────────────────────── */
 .search-wrap {
   max-width: 960px;
   margin: 40px auto 0;
@@ -205,7 +198,6 @@ body {
   padding: 16px 0 0; display: none;
 }
 
-/* ── SECTION ────────────────────────────────────── */
 .section {
   max-width: 1120px;
   margin: 0 auto 56px;
@@ -217,7 +209,6 @@ body {
   gap: 12px; margin-bottom: 28px; padding-top: 52px;
 }
 
-/* Bootstrap Icon wrap — glowing gradient circle */
 .section-icon-wrap {
   width: 32px; height: 32px;
   border-radius: 8px;
@@ -247,7 +238,6 @@ body {
   background: rgba(12, 16, 40, 0.6);
 }
 
-/* ── GAME SUB-SECTIONS ──────────────────────────── */
 .game-sub-section { margin-bottom: 32px; }
 .game-sub-header {
   font-family: var(--mono);
@@ -271,7 +261,6 @@ body {
   background: linear-gradient(to right, rgba(77,124,255,0.3), transparent);
 }
 
-/* ── APP CARDS ──────────────────────────────────── */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -301,7 +290,6 @@ body {
   text-decoration: none !important;
 }
 
-/* Card Banner */
 .card-banner {
   height: 110px;
   display: flex; align-items: center; justify-content: center;
@@ -327,7 +315,6 @@ body {
   background: linear-gradient(to top, rgba(7, 9, 26, 0.9) 0%, transparent 55%);
 }
 
-/* Icon wrap inside banner */
 .card-icon-wrap {
   position: relative; z-index: 2;
   width: 54px; height: 54px;
@@ -346,14 +333,13 @@ body {
 .card-icon-wrap .fallback {
   font-family: var(--mono); font-size: 12px; color: #fff; font-weight: 700;
 }
-/* Bootstrap Icons used as fallback in card icon wrap */
+
 .card-icon-wrap .fallback-bi {
   font-size: 22px;
   color: var(--accent2);
   opacity: 0.9;
 }
 
-/* Badge */
 .card-badge {
   position: absolute; top: 9px; right: 9px; z-index: 3;
   font-family: var(--mono);
@@ -366,7 +352,6 @@ body {
 .card-badge.blue { background: var(--accent2); box-shadow: 0 2px 8px rgba(77, 124, 255, 0.4); }
 .card-badge.green { background: #22c55e; box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4); }
 
-/* Card Body */
 .card-body {
   padding: 13px 14px 15px;
   display: flex; flex-direction: column; gap: 4px;
@@ -389,7 +374,6 @@ body {
 .card-arrow i { font-size: 12px; }
 .card:hover .card-arrow { opacity: 1; transform: translateX(0); }
 
-/* ── CMD CARDS ──────────────────────────────────── */
 .cmd-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -457,7 +441,6 @@ body {
   padding: 2px 9px; border-radius: 4px; margin-top: 6px;
 }
 
-/* ── MODAL ──────────────────────────────────────── */
 .modal-overlay {
   position: fixed; inset: 0;
   background: rgba(0, 0, 0, 0.85);
@@ -505,7 +488,6 @@ body {
 }
 .modal-cancel:hover { color: var(--text); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 footer {
   text-align: center; font-family: var(--mono);
   font-size: 11px; color: var(--muted);
@@ -515,7 +497,6 @@ footer {
 }
 footer span { color: var(--accent2); }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 640px) {
   .navbar { padding: 0 16px !important; }
   .section { padding: 0 16px; }
@@ -525,9 +506,5 @@ footer span { color: var(--accent2); }
   .hero-content { padding: 40px 16px 36px; }
   .hero h1 { font-size: 24px; }
 }
-
-/* ── BOOTSTRAP OVERRIDES (keep our custom styles winning) ── */
-/* Ensure Bootstrap's .card doesn't override ours */
 .card { word-wrap: normal !important; }
-/* Remove Bootstrap's .navbar-toggler etc. noise */
 .navbar-expand { flex-wrap: nowrap !important; }
